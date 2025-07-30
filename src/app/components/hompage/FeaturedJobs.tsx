@@ -15,7 +15,7 @@ interface jobProps {
 export default function FeaturedJobs({jobs}: jobProps) {
   return (
     <>
-      <div className="bg-white px-[60px] h-screen">
+      <div>
         <div className="text-[50px] font-bold">Featured Jobs</div>
         <div className="flex items-cente justify-between">
           <div className="text-gray-700">
@@ -30,7 +30,7 @@ export default function FeaturedJobs({jobs}: jobProps) {
 
           {jobs.map((job, index) => {
             return (
-              <div key={index} className="border border-gray-300 h-full bg-gradient-to-r from-[#FFF6E6] to-white p-[23px] rounded-md">
+              <div key={index} className="border border-gray-300 h-full hover:bg-gradient-to-r from-[#FFF6E6] to-white p-[23px] rounded-md hover:scale-105 transform-all duration-300">
             <div className="grid grid-rows-2 auto-rows-max">
                 <div className="text-xl font-bold">{job.position}</div>
                 <div className="flex gap-2">

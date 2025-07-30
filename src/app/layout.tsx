@@ -20,7 +20,7 @@ const figtree = Figtree({
   });
 
 export const metadata: Metadata = {
-  title: "KarirSpace",
+  title: "KarirSpace - Find Your Dream Job Today!",
   description: "Create using NextJs",
 };
 
