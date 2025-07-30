@@ -116,9 +116,6 @@ export default function page() {
   return (
     <>
       <div className="bg-white  w-full h-full">
-        <div className="mx-10 bg-white">
-          <Navbar logo={logo} navbarItem={navitem} />
-        </div>
 
         {/*Section 1 slider*/}
         <Slider />
@@ -130,8 +127,8 @@ export default function page() {
         <div className="bg-white px-[60px] py-[23px]">
           <FeaturedJobs jobs={setJob} />
         </div>
-        
 
+        {/* Browse by Category */}
         <div className="bg-[#3D82F51A] px-[60px] px-[23px] ">
           <JobCategory categoryJobs={setCategory} />
         </div>
