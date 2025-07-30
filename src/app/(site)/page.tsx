@@ -1,4 +1,5 @@
 
+import FeaturedJobs from "../components/hompage/FeaturedJobs";
 import LogoCarousel from "../components/hompage/logoCarousel";
 import Slider from "../components/hompage/slider";
 import Navbar from "../components/navbar";
@@ -29,7 +30,7 @@ const logoCarousel = [
 export default function page() {
   return (
     <>
-      <div className="bg-blue-300 w-full h-full">
+      <div className="bg-blue-300  w-full h-full">
         <div className="mx-10 bg-white">
           <Navbar logo={logo} navbarItem={navitem} />
         </div>
@@ -39,11 +40,9 @@ export default function page() {
               {/*end Section 1 slider*/}
               
                 <LogoCarousel logos={logoCarousel} />
-              
-              <div className="h-screen bg-white">
-                {/*Section 3*/}
-                Section 2
-               </div>
+
+              {/* Featured Jobs */}
+              <FeaturedJobs />
       </div>
     </>
   );
