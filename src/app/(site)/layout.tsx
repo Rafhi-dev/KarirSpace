@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 
 const figtree = Figtree({
     subsets: ["latin"],
-    weight: ["500"], // "400", "500", "600", "700" pilih sesuai kebutuhan
+    weight: ["500"], // "400", "500", "600", "700"
     variable: "--font-figtree",
     display: "swap",
   });

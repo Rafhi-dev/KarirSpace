@@ -1,6 +1,7 @@
 import FeaturedJobs from "../components/hompage/FeaturedJobs";
 import JobCategory from "../components/hompage/JobCategory";
 import LogoCarousel from "../components/hompage/logoCarousel";
+import QuoteSection from "../components/hompage/quioteSection";
 import Slider from "../components/hompage/slider";
 import Navbar from "../components/navbar";
 
@@ -122,16 +123,21 @@ export default function page() {
         {/*end Section 1 slider*/}
 
         <LogoCarousel logos={logoCarousel} />
-
         {/* Featured Jobs */}
         <div className="bg-white px-[60px] py-[23px]">
           <FeaturedJobs jobs={setJob} />
         </div>
 
         {/* Browse by Category */}
-        <div className="bg-[#3D82F51A] px-[60px] px-[23px] ">
+        <div className="bg-[#3D82F51A] px-[60px] py-[23px] ">
           <JobCategory categoryJobs={setCategory} />
         </div>
+
+        {/*Section Quote*/}
+        <div className="px-[60px] py-[60px]">
+          <QuoteSection />
+        </div>
+
       </div>
     </>
   );
