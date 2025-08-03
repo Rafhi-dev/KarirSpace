@@ -4,6 +4,7 @@ import LogoCarousel from "../components/hompage/logoCarousel";
 import QuoteSection from "../components/hompage/quioteSection";
 import Slider from "../components/hompage/slider";
 import Testimoni from "../components/hompage/Testimoni";
+import RecentBlog from "../components/hompage/RecentBlog";
 
 
 const logo = {
@@ -148,9 +149,10 @@ export default function page() {
 
         {/*Section 1 slider*/}
         <Slider />
-        {/*end Section 1 slider*/}
 
+        {/*end Section 1 slider*/}
         <LogoCarousel logos={logoCarousel} />
+
         {/* Featured Jobs */}
         <div className="bg-white px-[60px] py-[23px]">
           <FeaturedJobs jobs={setJob} />
@@ -169,6 +171,11 @@ export default function page() {
         {/* section testimoni */}
         <div className="bg-[#3D82F51A] px-[60px] py-[23px] ">
        <Testimoni testi={setTesti} />
+        </div>
+        
+        {/* Section blog */}
+        <div className="bg-white px-[60px] py-[23px]">
+          <RecentBlog />
         </div>
 
       </div>

@@ -1,5 +1,4 @@
 import { Quote, Star } from "lucide-react";
-import test from "node:test";
 
 interface testiType {
   star: number;
