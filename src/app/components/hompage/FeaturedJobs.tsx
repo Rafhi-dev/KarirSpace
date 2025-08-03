@@ -1,4 +1,4 @@
-import { Bookmark, MapPin, Navigation } from "lucide-react";
+import { Bookmark, MapPin,} from "lucide-react";
 import Link from "next/link";
 
 interface jobType {

@@ -11,13 +11,11 @@ export default function JobCategory({ categoryJobs }: categoryProp) {
   return (
     <>
       <div className="flex flex-col gap-[40px]">
-        {" "}
-        <div className="text-center text-[50px] pt-[60px] font-bold">
-          Browse by Category
-        </div>
-        <div className="text-center text-gray-700">
-          At eu lobortis pretium tincidunt amet lacus ut aenean aliquet amet
-          lacus ut aenean aliquet
+        <div className="text-center pt-[60px]">
+         
+          <p className="text-[50px] font-bold">Browse by Category</p>
+            <p className="text-center text-gray-700">At eu lobortis pretium tincidunt amet lacus ut aenean aliquet amet
+            lacus ut aenean aliquet</p>
         </div>
       </div>
 

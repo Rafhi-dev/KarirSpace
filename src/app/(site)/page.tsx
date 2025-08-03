@@ -3,7 +3,8 @@ import JobCategory from "../components/hompage/JobCategory";
 import LogoCarousel from "../components/hompage/logoCarousel";
 import QuoteSection from "../components/hompage/quioteSection";
 import Slider from "../components/hompage/slider";
-import Navbar from "../components/navbar";
+import Testimoni from "../components/hompage/Testimoni";
+
 
 const logo = {
   icon: "H",
@@ -112,11 +113,38 @@ const setCategory = [
   { category: "Engineering & Architecture", totalJob: 3100 }
 ];
 
+const setTesti = [
+  {
+    star: 5,
+    subject: "Excellent Support",
+    testi:
+      "Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Morbi tincidunt augue interdum velit euismod in pellentesque.",
+    clientName: "Sarah Wibowo",
+    company: "Intel Inside"
+  },
+  {
+    star: 3,
+    subject: "Amazing Service",
+    testi:
+      "Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed tristique in dolor. Mus etiam et vestibulum venenatis",
+    clientName: "Andre Afliano",
+    company: "CENTROIS"
+  },
+  {
+    star: 4,
+    subject: "Good Engineer",
+    testi:
+      "Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu.",
+    clientName: "Rafhi Ardipramuji",
+    company: "Nvidia Corporation"
+  },
+]
+
 
 export default function page() {
   return (
     <>
-      <div className="bg-white  w-full h-full">
+      <div className="bg-white">
 
         {/*Section 1 slider*/}
         <Slider />
@@ -136,6 +164,11 @@ export default function page() {
         {/*Section Quote*/}
         <div className="px-[60px] py-[60px]">
           <QuoteSection />
+        </div>
+
+        {/* section testimoni */}
+        <div className="bg-[#3D82F51A] px-[60px] py-[23px] ">
+       <Testimoni testi={setTesti} />
         </div>
 
       </div>
