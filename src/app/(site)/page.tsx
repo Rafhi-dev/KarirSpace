@@ -5,6 +5,7 @@ import QuoteSection from "../components/hompage/quioteSection";
 import Slider from "../components/hompage/slider";
 import Testimoni from "../components/hompage/Testimoni";
 import RecentBlog from "../components/hompage/RecentBlog";
+import FooterPage from "../components/FooterPage";
 
 
 const logo = {
@@ -116,7 +117,7 @@ const setCategory = [
 
 const setTesti = [
   {
-    star: 5,
+    star: 3,
     subject: "Excellent Support",
     testi:
       "Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Morbi tincidunt augue interdum velit euismod in pellentesque.",
@@ -124,8 +125,8 @@ const setTesti = [
     company: "Intel Inside"
   },
   {
-    star: 3,
-    subject: "Amazing Service",
+    star: 4,
+    subject: "UI/UX Designer",
     testi:
       "Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed tristique in dolor. Mus etiam et vestibulum venenatis",
     clientName: "Andre Afliano",
@@ -133,7 +134,7 @@ const setTesti = [
   },
   {
     star: 4,
-    subject: "Good Engineer",
+    subject: "Front-End",
     testi:
       "Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu.",
     clientName: "Rafhi Ardipramuji",
@@ -177,6 +178,9 @@ export default function page() {
         <div className="bg-white px-[60px] py-[23px]">
           <RecentBlog />
         </div>
+
+        {/* Footer */}
+        <FooterPage />  
 
       </div>
     </>
